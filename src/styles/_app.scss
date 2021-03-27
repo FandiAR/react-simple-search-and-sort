@@ -1,0 +1,12 @@
+// Variables scss
+@import "./vars";
+
+// Global styles
+@import "./styles";
+
+// Components
+@import "../components/Button/Button.scss";
+
+// Containers
+@import "../containers/HomeContainer/Home.scss";
+@import "../containers/DetailContainer/Detail.scss";

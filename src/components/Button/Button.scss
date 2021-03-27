@@ -1,0 +1,24 @@
+.btn-green {
+    width: 80px;
+    height: 30px;
+    background-color: $green;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: $white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn-orange {
+    width: 100px;
+    height: 30px;
+    border: solid 1px $orange;
+    background-color: $white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: $black;
+    margin-right: 10px;
+    cursor: pointer;
+}

@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/_app.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Router } from 'react-router-dom';
+import history from './routes/browserHistory';
+import { Provider } from 'react-redux';
+import configureStore from './redux-modules/Create';
+import apiHost from './libs/apiHost';
+
+let initialState = 'Fandi';
+initialState = window.DATA;
+const client = new apiHost();
+const store = configureStore(client, initialState);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <BrowserRouter>
+      <Router history={history}>
+        <App />
+      </Router>
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 );
 
