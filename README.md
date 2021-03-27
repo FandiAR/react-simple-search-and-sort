@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+## Simple CRUD NextJs with Ant Design
+This project was built on [NextJs](https://nextjs.org/).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to run
+1. Clone this repo with following commands:
 
-## Available Scripts
+    ```
+    git clone https://github.com/FandiAR/crud-nextjs-antd.git
+    ```
+2. Move to planet-nextjs directory
 
-In the project directory, you can run:
+    ```
+    cd crud-nextjs-antd
+    ```
+3. Run npm install 
 
-### `npm start`
+    ```
+    npm install
+    ```
+4. Run apps 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    ```
+    npm run dev
+    ```
+5. Open browser with the following url 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    http://localhost:3000
 
-### `npm test`
+## Flow
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. At first load, show you the login page.
+2. Email: ``` eve.holt@reqres.in ```, password: ``` cityslicka ``` for login.
+3. You can go to register page via login page with click ``` Daftar ```.
+4. Email: ``` eve.holt@reqres.in ```, password: ``` pistol ``` for register.
+5. You will be redirected to users page after login.
+6. There are search, sort faetures on table users.
+7. You could edit or delete every single row on table.
 
-### `npm run build`
+## Application stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. [NextJs](https://nextjs.org/).
+2. [And Design](https://ant.design/) as a design system.
+3. [SASS](https://sass-lang.com/) as a CSS Extention.
+4. [Axios](https://www.npmjs.com/package/axios) as promise based HTTP client for the browser.
+5. [Reqres](https://reqres.in/) a hosted REST-API.
+6. [ESLint](https://eslint.org/) as pluggable and configurable javascript linter tool.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Live Demo](https://crud-nextjs-antd.vercel.app/)

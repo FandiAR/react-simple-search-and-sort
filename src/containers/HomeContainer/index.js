@@ -99,7 +99,7 @@ const HomeContainer = (props) => {
   return (
     <div className="home">
       <div className="wrapper">
-        <ListHeader />
+        <ListHeader data={searchResults} />
         <div className="margin-top-4">
           <SearchBar
             searchTerm={searchTerm}

@@ -40,16 +40,12 @@ const DetailContainer = (props) => {
         </div>
     );
 
-    const back = () => {
-        history.push('/');
-    };
-
     return (
         <div className="home">
             <div className="wrapper">
                 <div className="text-black font-42 padding-top-4">Daftar Transaksi</div>
                 <div className="margin-top-4 box-header-detail">
-                    <p className="left-header text-bold font-18">{`ID TRANSKSI: #${data.id}`}</p>
+                    <p className="left-header text-bold font-18">{`ID TRANSAKSI: #${data.id}`}</p>
                     <span className="right-header">
                         <StyledButton
                             styleClass={
@@ -65,7 +61,7 @@ const DetailContainer = (props) => {
                     <StyledButton
                         styleClass="btn-orange text-orange bg-trans"
                         text="Kembali"
-                        handleClick={back}
+                        handleClick={() => history.push('/')}
                     />
                 </div>
             </div>
