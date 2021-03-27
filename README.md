@@ -1,4 +1,4 @@
-## Simple CRUD NextJs with Ant Design
+## ReactJs Simple Search and Sort
 This project was built on [ReactJs](https://reactjs.org/).
 
 ## How to run
