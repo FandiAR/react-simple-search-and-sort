@@ -41,4 +41,5 @@ This project was built on [ReactJs](https://reactjs.org/).
 4. [Redux](https://redux.js.org/) a predictable state container for JS apps.
 5. [superagent](https://www.npmjs.com/package/superagent) as small progressive client-side HTTP request library.
 
-[Live Demo](https://react-simple-search-and-sort.vercel.app/)
+## Live Demo
+[Click Here](https://react-simple-search-and-sort.vercel.app/)
