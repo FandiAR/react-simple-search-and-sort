@@ -1,5 +1,5 @@
 import SearchPage from '../pages/index';
-import NganuPage from '../pages/detail';
+import DetailPage from '../pages/detail';
 
 export const MainRoutes = [
   {
@@ -10,6 +10,6 @@ export const MainRoutes = [
   {
     path: '/detail/:id',
     exact: true,
-    component: NganuPage,
+    component: DetailPage,
   },
 ];
