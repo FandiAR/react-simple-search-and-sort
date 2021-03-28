@@ -29,37 +29,23 @@ export default function reducer(state = initialState, action = {}) {
             }
 
         case FAIL:
-            delete state.result;
             return {
                 loaded: true,
                 loading: false,
-                result: false,
                 error: action.error,
             };
 
         case HANDLE_SORT_CHANGE:
             state.sortTerm = action.sort;
-            if (state.sortTerm === 'asc') {
-                state.data.sort((a, b) => {
-                    const firstName = a.beneficiary_name.split(' ').slice(0, -1).join(' ').toLowerCase();
-                    const lastName = b.beneficiary_name.split(' ').slice(0, -1).join(' ').toLowerCase();
-                    return firstName.localeCompare(lastName);
-                })
-            } if (state.sortTerm === 'desc') {
-                state.data.sort((a, b) => {
-                    const firstName = a.beneficiary_name.split(' ').slice(0, -1).join(' ').toLowerCase();
-                    const lastName = b.beneficiary_name.split(' ').slice(0, -1).join(' ').toLowerCase();
-                    return lastName.localeCompare(firstName);
-                })
-            } if (state.sortTerm === 'newer') {
-                state.data.sort((a, b) => {
-                    return new Date(b.created_at) - new Date(a.created_at);
-                })
-            } if (state.sortTerm === 'older') {
-                state.data.sort((a, b) => {
-                    return new Date(a.created_at) - new Date(b.created_at);
-                })
-            }
+            state.data.sort((a, b) => {
+                const firstName = a.beneficiary_name.split(' ').slice(0, -1).join(' ').toLowerCase();
+                const lastName = b.beneficiary_name.split(' ').slice(0, -1).join(' ').toLowerCase();
+                if (state.sortTerm === 'asc') { return firstName.localeCompare(lastName); }
+                if (state.sortTerm === 'desc') { return lastName.localeCompare(firstName); }
+                if (state.sortTerm === 'newer') { return new Date(b.created_at) - new Date(a.created_at); }
+                if (state.sortTerm === 'older') { return new Date(a.created_at) - new Date(b.created_at); }
+                return state.data;
+            })
             return {
                 ...state,
             }
