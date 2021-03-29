@@ -32,15 +32,9 @@ const HomeContainer = (props) => {
           || x.beneficiary_bank.toLowerCase().includes(searchTerm.toLowerCase())
           || x.sender_bank.toLowerCase().includes(searchTerm.toLowerCase()),
       );
-      if (dataSearch) {
-        searchResults = dataSearch;
-      } else {
-        searchResults = [];
-      }
+      if (dataSearch) { searchResults = dataSearch; } else { searchResults = []; }
     });
-  } else {
-    searchResults = data;
-  }
+  } else { searchResults = data; }
 
   const handleClickCard = (item, id) => {
     history.push({
