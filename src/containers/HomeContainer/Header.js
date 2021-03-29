@@ -2,7 +2,7 @@ import { convertToRupiah } from '../../libs/common';
 
 const ListHeader = (props) => {
   const { data } = props;
-  const sum = data.reduce((accumulator, current) => accumulator + current.amount, 0);
+  const sum = data ? data.reduce((accumulator, current) => accumulator + current.amount, 0) : 0;
 
   return (
     <>
