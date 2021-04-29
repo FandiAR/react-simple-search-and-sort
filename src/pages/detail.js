@@ -1,5 +1,5 @@
-import DetailContainer from "../containers/DetailContainer";
-import PageTitle from '../components/PageTitle';
+import DetailContainer from 'containers/DetailContainer';
+import PageTitle from 'components/PageTitle';
 
 const Detail = (props) => {
     const { history } = props;
