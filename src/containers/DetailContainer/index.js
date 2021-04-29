@@ -1,6 +1,6 @@
 import { FaEnvelopeOpenText } from 'react-icons/fa';
-import StyledButton from '../../components/Button';
-import { convertToRupiah, formatDate } from '../../libs/common';
+import StyledButton from 'components/Button';
+import { convertToRupiah, formatDate } from 'libs/common';
 
 const DetailContainer = (props) => {
     const { history } = props;

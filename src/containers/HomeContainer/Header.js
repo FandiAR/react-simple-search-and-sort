@@ -1,4 +1,4 @@
-import { convertToRupiah } from '../../libs/common';
+import { convertToRupiah } from 'libs/common';
 
 const ListHeader = (props) => {
   const { data } = props;

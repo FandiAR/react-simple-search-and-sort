@@ -2,7 +2,7 @@ import { Switch, withRouter } from 'react-router-dom';
 import { MainRoutes } from './routes/Routes';
 import CustomPropsRoute from './routes/renderPath';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Switch>
@@ -10,6 +10,6 @@ function App() {
       </Switch>
     </div>
   );
-}
+};
 
 export default withRouter(App);

@@ -1,5 +1,5 @@
-import SearchPage from '../pages/index';
-import DetailPage from '../pages/detail';
+import SearchPage from 'pages/index';
+import DetailPage from 'pages/detail';
 
 export const MainRoutes = [
   {

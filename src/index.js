@@ -25,6 +25,25 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+/**
+ * Hot reload for development
+ */
+if (module.hot) {
+  module.hot.accept('./App', () => {
+    const NextApp = require('./App').default;
+    ReactDOM.hydrate(
+      <Provider store={store}>
+        <BrowserRouter>
+          <Router history={history}>
+            <NextApp />
+          </Router>
+        </BrowserRouter>
+      </Provider>,
+      document.getElementById('root')
+    );
+  });
+}
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

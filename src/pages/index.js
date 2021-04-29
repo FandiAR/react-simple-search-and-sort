@@ -1,5 +1,5 @@
-import HomeContainer from "../containers/HomeContainer";
-import PageTitle from '../components/PageTitle';
+import HomeContainer from 'containers/HomeContainer';
+import PageTitle from 'components/PageTitle';
 
 const HomePage = (props) => {
     const { history } = props;
